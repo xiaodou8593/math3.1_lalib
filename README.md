@@ -1,2 +1,2 @@
-# math3.0_lalib
- math3.0 linear algebra
+# math3.1_lalib
+ math3.1 linear algebra
