@@ -14,3 +14,6 @@ scoreboard objectives add quat_orth_y dummy
 scoreboard objectives add quat_orth_z dummy
 scoreboard objectives add quat_orth_w dummy
 scoreboard objectives add quat_phi dummy
+
+# 设置常量
+scoreboard players set 349 int 349
