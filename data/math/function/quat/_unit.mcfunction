@@ -1,6 +1,7 @@
 #math:quat/_unit
 # 把临时四元数单位化
 # 输入{<quat_x,int>, <quat_y,int>, <quat_z,int>, <quat_w,int>}
+# 本函数适用于把模长接近于1的四元数进行单位化，模长过大可能会溢出！
 
 #计算模长平方
 scoreboard players operation inp int = quat_x int

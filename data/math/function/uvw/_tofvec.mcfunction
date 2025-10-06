@@ -1,4 +1,4 @@
-#math:uvw/_tovec
+#math:uvw/_tofvec
 # 局部坐标转换相对坐标
 # 输入{<u,int>,<v,int>,<w,int>}
 # 输出{<fvec_x,int>,<fvec_y,int>,<fvec_z,int>}

@@ -4,14 +4,14 @@
 # 输出{<quat_x,int>,<quat_y,int>,<quat_z,int>,<quat_w,int>}
 # 需要以世界实体为执行者
 
-#计算正余弦
+# 计算正余弦
 execute store result entity @s Rotation[0] float -0.0001 run scoreboard players get quat_phi int
 execute at @s positioned 0.0 0.0 0.0 rotated ~ 0.0 run tp @s ^ ^ ^1.0
 data modify storage math:io xyz set from entity @s Pos
 execute store result score cos int run data get storage math:io xyz[2] 10000
 execute store result score sin int run data get storage math:io xyz[0] 10000
 
-#计算当前姿态
+# 计算当前姿态
 scoreboard players operation quat_x int = quat_start_x int
 scoreboard players operation quat_x int *= cos int
 scoreboard players operation sstemp int = quat_orth_x int
