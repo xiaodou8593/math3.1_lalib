@@ -1,11 +1,11 @@
-#math:uvw/_vecto
-# 世界坐标转换局部坐标
-# 输入{<vec_x,int>,<vec_y,int>,<vec_z,int>}
+#math:uvw/_nvec_to
+# 法向量转换局部坐标
+# 输入{<nvec_x,int>,<nvec_y,int>,<nvec_z,int>}
 # 输出{<u,int>,<v,int>,<w,int>}
 
-execute store result score u int store result score v int store result score w int run scoreboard players operation vec_x int -= x int
-execute store result score sstemp_u1 int store result score sstemp_v1 int store result score sstemp_w1 int run scoreboard players operation vec_y int -= y int
-execute store result score sstemp_u2 int store result score sstemp_v2 int store result score sstemp_w2 int run scoreboard players operation vec_z int -= z int
+execute store result score u int store result score v int run scoreboard players operation w int = nvec_x int
+execute store result score sstemp_u1 int store result score sstemp_v1 int run scoreboard players operation sstemp_w1 int = nvec_y int
+execute store result score sstemp_u2 int store result score sstemp_v2 int run scoreboard players operation sstemp_w2 int = nvec_z int
 
 scoreboard players operation u int *= ivec_x int
 scoreboard players operation sstemp_u1 int *= ivec_y int
@@ -27,7 +27,3 @@ scoreboard players operation w int += sstemp_w1 int
 scoreboard players operation sstemp_w2 int *= kvec_z int
 scoreboard players operation w int += sstemp_w2 int
 scoreboard players operation w int /= 10000 int
-
-scoreboard players operation vec_x int += x int
-scoreboard players operation vec_y int += y int
-scoreboard players operation vec_z int += z int
