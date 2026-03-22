@@ -20,7 +20,6 @@ scoreboard players operation vec_y int /= 10000 int
 
 scoreboard players operation vec_z int = sstempy int
 scoreboard players operation vec_z int *= fvec_x int
-scoreboard players operation sstemp0 int = fvec_y int
-scoreboard players operation sstemp0 int *= sstempx int
-scoreboard players operation vec_z int -= sstemp0 int
+scoreboard players operation sstempx int *= fvec_y int
+scoreboard players operation vec_z int -= sstempx int
 scoreboard players operation vec_z int /= 10000 int
