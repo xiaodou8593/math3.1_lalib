@@ -15,3 +15,7 @@ scoreboard players operation rquat_x int = rquat_y int
 scoreboard players operation rquat_z int = rquat_w int
 scoreboard players operation rquat_x int *= -1 int
 scoreboard players operation rquat_z int *= -1 int
+
+scoreboard players operation ivec_y int *= sstemp_signi int
+scoreboard players operation jvec_y int *= sstemp_signj int
+scoreboard players operation kvec_y int *= sstemp_signk int
