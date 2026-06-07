@@ -26,7 +26,7 @@ execute store result score iquat_x int run data get storage math:io xyz[0] 10000
 execute store result score iquat_z int run data get storage math:io xyz[2] 10000
 
 scoreboard players operation iquat_x int *= res int
-scoreboard players operation iquat_x int /= 10000 int
+scoreboard players operation iquat_x int /= 20000 int
 
 scoreboard players operation iquat_z int *= res int
-scoreboard players operation iquat_z int /= 10000 int
+scoreboard players operation iquat_z int /= 20000 int
