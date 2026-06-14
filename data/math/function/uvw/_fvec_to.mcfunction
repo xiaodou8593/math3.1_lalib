@@ -1,4 +1,4 @@
-#math:uvw/_fvecto
+#math:uvw/_fvec_to
 # 世界坐标转换局部坐标
 # 输入{<fvec_x,int>,<fvec_y,int>,<fvec_z,int>}
 # 输出{<u,int>,<v,int>,<w,int>}
