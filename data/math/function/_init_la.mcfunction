@@ -12,3 +12,6 @@ function math:uvw/init
 
 # 向量初始化
 function math:vec/init
+
+function math:_version_la
+scoreboard players operation math_la_init_version int = version_la int
